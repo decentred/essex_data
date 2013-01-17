@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<epm xmlns='http://eprints.org/ep2/data/2.0' id='http://researchdata.localdomain/id/epm/dataplus'>
+  <epmid>dataplus</epmid>
+  <uri>http://researchdata.localdomain/id/epm/dataplus</uri>
+  <documents>
+    <document>
+      <format>other</format>
+      <content>install</content>
+    </document>
+  </documents>
+  <version>1.0.0</version>
+  <title>Data+</title>
+  <description>Augments your existing eprints repository to have custom workflow for items of type &quot;dataset&quot; with which is simple but still DataCite complient.</description>
+</epm>
