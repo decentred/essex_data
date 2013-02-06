@@ -4,11 +4,44 @@
   <uri>http://researchdata.localdomain/id/epm/dataplus</uri>
   <documents>
     <document>
+      <files>
+        <file>
+          <filename>epm/dataplus/cfg/cfg.d/dataplus.pl</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>f95e92f96019a81bc6f226026d0f23ac</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>718</filesize>
+        </file>
+        <file>
+          <filename>epm/dataplus/cfg/lang/en/phrases/dataplus.xml</filename>
+          <mime_type>application/xml</mime_type>
+          <hash>42468ced1cf6e759b180ff3c03a7b4d5</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1119</filesize>
+        </file>
+        <file>
+          <filename>plugins/EPrints/Plugin/Screen/EPMC/DataPlus.pm</filename>
+          <mime_type>inode/symlink</mime_type>
+          <hash>a97f07d3d18e84064f527bc7e7a2d4de</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>3525</filesize>
+        </file>
+        <file>
+          <filename>plugins/EPrints/Plugin/Screen/NewDataset.pm</filename>
+          <mime_type>inode/symlink</mime_type>
+          <hash>bc68cdf771f881df78aee3a221a6c9ee</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>1151</filesize>
+        </file>
+      </files>
+      <mime_type>inode/symlink</mime_type>
       <format>other</format>
+      <main>plugins/EPrints/Plugin/Screen/NewDataset.pm</main>
       <content>install</content>
     </document>
   </documents>
   <version>1.0.0</version>
+  <controller>EPMC::DataPlus</controller>
   <title>Data+</title>
   <description>Augments your existing eprints repository to have custom workflow for items of type &quot;dataset&quot; with which is simple but still DataCite complient.</description>
 </epm>
