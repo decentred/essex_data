@@ -52,16 +52,16 @@ push (@{$c->{summary_page_metadata}}, qw/
       data_type
       contributors
       funders
-      date_coll
-      date_range
+      collection_date
+      temportal_cover
       grant
       date
       date_type
-      geog
-      coll_samp
+      geographic_cover
+      collection_method
       bounding_box
       legal_ethical
-      lineage
+      provenance
       note
       language
       relation
@@ -106,7 +106,7 @@ $c->add_dataset_field( "eprint", {
 
 
 $c->add_dataset_field( "eprint", {
-        name => 'coll_samp',
+        name => 'collection_method',
         type => 'longtext',
         input_rows => '10',
 }, reuse => 1 );
@@ -117,7 +117,7 @@ $c->add_dataset_field( "eprint", {
 }, reuse => 1 );
 
 $c->add_dataset_field( "eprint", {
-        name => 'lineage',
+        name => 'provenance',
         type => 'longtext',
         input_rows => '3',
 
@@ -129,7 +129,7 @@ $c->add_dataset_field( "eprint", {
 }, reuse => 1 );
 
 $c->add_dataset_field( "eprint", {
-        name => 'geog',
+        name => 'geographic_cover',
         type => 'text',
 }, reuse => 1 );
 
@@ -150,7 +150,7 @@ $c->add_dataset_field( "eprint", {   name => 'terms_conditions_agreement',
     input_style => 'medium',
 }, reuse => 1 );
 
-$c->add_dataset_field( "eprint", {   name => 'date_coll',
+$c->add_dataset_field( "eprint", {   name => 'collection_date',
         type => 'compound',
         fields => [
                 {
@@ -166,7 +166,7 @@ $c->add_dataset_field( "eprint", {   name => 'date_coll',
 }, reuse => 1 );
 
 $c->add_dataset_field( "eprint", {
-        name => 'date_range',
+        name => 'temporal_cover',
         type => 'compound',
         fields => [
                 {

@@ -1,48 +1,47 @@
 <?xml version='1.0' encoding='utf-8'?>
-<epm xmlns='http://eprints.org/ep2/data/2.0' id='http://researchdata.localdomain/id/epm/dataplus'>
+<epm xmlns='http://eprints.org/ep2/data/2.0' id='/id/epm/dataplus'>
   <epmid>dataplus</epmid>
-  <uri>http://researchdata.localdomain/id/epm/dataplus</uri>
+  <uri>/id/epm/dataplus</uri>
   <documents>
     <document>
       <files>
         <file>
-          <filename>epm/dataplus/cfg/cfg.d/x_dataplus.pl</filename>
-          <mime_type>text/x-c++</mime_type>
-          <hash>f2c07fb86b1ea37b80d5048f3917dcec</hash>
+          <filename>epm/dataplus/cfg/autocomplete/funders</filename>
+          <hash>3d15d9dae4f782aabeeb177057c68e78</hash>
           <hash_type>MD5</hash_type>
-          <filesize>5863</filesize>
+          <filesize>516</filesize>
         </file>
         <file>
-          <filename>epm/dataplus/cfg/citations/document/uk_data_archive_full.xml</filename>
-          <mime_type>application/xml</mime_type>
+          <filename>epm/dataplus/cfg/cfg.d/x_dataplus.pl</filename>
+          <hash>0a75893eb08e10566a555a206d58545c</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>5930</filesize>
+        </file>
+        <file>
+          <filename>epm/dataplus/cfg/citations/document/recollect_full.xml</filename>
           <hash>e5d4798216a39b46e1ce0d34a92dc333</hash>
           <hash_type>MD5</hash_type>
           <filesize>3139</filesize>
         </file>
         <file>
           <filename>epm/dataplus/cfg/lang/en/phrases/dataplus.xml</filename>
-          <mime_type>application/xml</mime_type>
-          <hash>3e93f6ab30d7f37e686dddbd1b1938ef</hash>
+          <hash>488635977d4ef20a8d21b2568451db46</hash>
           <hash_type>MD5</hash_type>
-          <filesize>16859</filesize>
+          <filesize>17651</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/EPMC/DataPlus.pm</filename>
-          <mime_type>inode/symlink</mime_type>
-          <hash>05e211eee9683d4799b41d9f4c4437e3</hash>
+          <hash>be134ab0cbbd3da36629f27f62ea39bc</hash>
           <hash_type>MD5</hash_type>
-          <filesize>5876</filesize>
+          <filesize>7326</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/NewDataset.pm</filename>
-          <mime_type>inode/symlink</mime_type>
           <hash>bc68cdf771f881df78aee3a221a6c9ee</hash>
           <hash_type>MD5</hash_type>
           <filesize>1151</filesize>
         </file>
       </files>
-      <mime_type>inode/symlink</mime_type>
-      <format>other</format>
       <main>plugins/EPrints/Plugin/Screen/NewDataset.pm</main>
       <content>install</content>
     </document>

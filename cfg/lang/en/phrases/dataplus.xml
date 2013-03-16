@@ -27,15 +27,15 @@
 
     <epp:phrase id="eprint_fieldname_westlongitude">West Longitude</epp:phrase>
 
-    <epp:phrase id="eprint_fieldname_coll_samp">Data Collection Method</epp:phrase>
+    <epp:phrase id="eprint_fieldname_collection_method">Data Collection Method</epp:phrase>
 
     <epp:phrase id="eprint_fieldname_grant">Grant Number</epp:phrase>
 
-    <epp:phrase id="eprint_fieldname_lineage">Data Processing/Preparation Activities</epp:phrase>
+    <epp:phrase id="eprint_fieldname_provenance">Data Processing/Preparation Activities</epp:phrase>
 
     <epp:phrase id="eprint_fieldname_restrictions">Use constraints</epp:phrase>
 
-    <epp:phrase id="eprint_fieldname_geog">Geographic coverage</epp:phrase>
+    <epp:phrase id="eprint_fieldname_geographic_cover">Geographic coverage</epp:phrase>
 
     <epp:phrase id="eprint_fieldhelp_northlatitude">Latitude of the north most point of an imaginary square placed around the sample area</epp:phrase>
 
@@ -43,15 +43,15 @@
 
     <epp:phrase id="eprint_fieldhelp_westlongitude">Latitude of the west most point of an imaginary square placed around the sample area</epp:phrase>
 
-    <epp:phrase id="eprint_fieldhelp_coll_samp">Describe the methodology which resulted in this data collection, including information on the sampled entities. </epp:phrase>
+    <epp:phrase id="eprint_fieldhelp_collection_method">Describe the methodology which resulted in this data collection, including information on the sampled entities. </epp:phrase>
 
     <epp:phrase id="eprint_fieldhelp_grant">If provided enter the grant number or identifier for this research or its parent project.</epp:phrase>
 
-    <epp:phrase id="eprint_fieldhelp_lineage">Information about the source of any data or data element not derived from previous work, and any changes made to this data prior to deposit.</epp:phrase>
+    <epp:phrase id="eprint_fieldhelp_provenance">Information about the source of any data or data element not derived from previous work, and any changes made to this data prior to deposit.</epp:phrase>
 
     <epp:phrase id="eprint_fieldhelp_restrictions">You may stipulate any specific requirements or limitations for re-use of this resource here.</epp:phrase>
 
-    <epp:phrase id="eprint_fieldhelp_geog">Enter, if applicable, either the geographic regions in which your data collection was carried out or the spatial reference system used.</epp:phrase>
+    <epp:phrase id="eprint_fieldhelp_geographic_cover">Enter, if applicable, either the geographic regions in which your data collection was carried out or the spatial reference system used.</epp:phrase>
 
     <epp:phrase id="eprint_typename_data_collection">Data Collection</epp:phrase>
 
@@ -147,13 +147,13 @@
 
     <epp:phrase id="content_typename_mixed_bundle">Mixed Bundle</epp:phrase>
 
-    <epp:phrase id="eprint_fieldname_date_coll">Collection period</epp:phrase>
+    <epp:phrase id="eprint_fieldname_collection_date">Collection period</epp:phrase>
 
-    <epp:phrase id="eprint_fieldname_date_range">Temporal coverage</epp:phrase>
+    <epp:phrase id="eprint_fieldname_temporal_cover">Temporal coverage</epp:phrase>
 
-    <epp:phrase id="eprint_fieldname_date_range_date_from">From</epp:phrase>
+    <epp:phrase id="eprint_fieldname_temporal_cover_date_from">From</epp:phrase>
 
-    <epp:phrase id="eprint_fieldname_date_range_date_to">To</epp:phrase>
+    <epp:phrase id="eprint_fieldname_temporal_cover_date_to">To</epp:phrase>
 
     <epp:phrase id="eprint_fieldhelp_keywords">Enter keywords or phrases associated with this dataset, seperated by commas (,)</epp:phrase>
 
@@ -163,9 +163,9 @@
 
     <epp:phrase id="eprint_fieldhelp_funders">The organisation or public body that funded the research responsible for generating this data.</epp:phrase>
 
-    <epp:phrase id="eprint_fieldhelp_date_coll">The date that data collection was completed.</epp:phrase>
+    <epp:phrase id="eprint_fieldhelp_collection_date">The date that data collection was completed.</epp:phrase>
 
-    <epp:phrase id="eprint_fieldhelp_date_range">The temporal range to which this dataset applies. E.g. If this is data pertaining to a historical period enter the bounding dates.</epp:phrase>
+    <epp:phrase id="eprint_fieldhelp_temporal_cover">The temporal range to which this dataset applies. E.g. If this is data pertaining to a historical period enter the bounding dates.</epp:phrase>
 
     <epp:phrase id="eprint_fieldhelp_legal_ethical">Enter a description of any legal or ethical issues encountered in generating the data, and how these were dealt with. E.g. Risk of disclosing participants identities was mitigated by removing references to real names and other identifying information.</epp:phrase>
 
@@ -196,9 +196,9 @@
 
     <epp:phrase id="eprint_fieldname_keywords">Keywords</epp:phrase>
 
-    <epp:phrase id="eprint_fieldname_date_coll_date_from">From</epp:phrase>
+    <epp:phrase id="eprint_fieldname_collection_date_date_from">From</epp:phrase>
 
-    <epp:phrase id="eprint_fieldname_date_coll_date_to">To</epp:phrase>
+    <epp:phrase id="eprint_fieldname_collection_date_date_to">To</epp:phrase>
 
     <epp:phrase id="eprint_fieldname_related_resources">Related resources</epp:phrase>
 
@@ -263,6 +263,14 @@
     <epp:phrase id="ukda_file_size">UNSPECIFIED</epp:phrase>
     <epp:phrase id="eprint_fieldname_doi">DOI</epp:phrase>
     <epp:phrase id="eprint_fieldhelp_doi">This field is for the records DOI. By default this field is only visible to staff. If you want to change it you will have to edit your workflow XML. You may need to read this: http://wiki.eprints.org/w/Workflow_Format. In any case you should probably change this phrase using the "Edit page phrases" link.</epp:phrase>
+    <epp:phrase id="licenses_typename_odc_by">Data: Open Data Commons Attribution License (Attribution)</epp:phrase>
+    <epp:phrase id="licenses_typename_odc_odbl">Data: Open Database License (ODbL) (Attribution-Share Alike)</epp:phrase>
+    <epp:phrase id="licenses_typename_odc_dbcl">Data: Open Database Contents License (DbCL)</epp:phrase>
+<epp:phrase id="content_typename_metadata">Additional metadata</epp:phrase>
+<epp:phrase id="content_typename_documentation">Documentation</epp:phrase>
+<epp:phrase id="content_typename_archive">Archive</epp:phrase>
+<epp:phrase id="content_typename_full_archive">Full Archive</epp:phrase>
+<epp:phrase id="content_typename_documentation">Documentation</epp:phrase>
 
 
 </epp:phrases>

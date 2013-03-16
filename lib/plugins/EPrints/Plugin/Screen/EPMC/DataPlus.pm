@@ -40,12 +40,12 @@ my $dataset_stage = '<?xml version="1.0"?>
 		<epc:if test="$STAFF_ONLY = \'TRUE\'">
 			<component show_help="always"><field ref="doi" required="yes"/></component>
 		</epc:if>
-		<component><field ref="data_type" required="yes"/></component>
+		<component><field ref="data_type" required="yes" input_lookup_url="{$config{perl_url}}/users/lookup/simple_file" input_lookup_params="file=data_type" /></component>
 
 		<component><field ref="contributors" collapse="yes" /></component>
 		<component type="Field::Multi">
 		    <title>Research Funders</title>
-		    <field ref="funders" required="yes" />
+		    <field ref="funders" required="yes" input_lookup_url="{$config{perl_url}}/users/lookup/simple_file" input_lookup_params="file=funders" />
 		    <field ref="funders_other_text" />
 		</component>
 		<component><field ref="grant" collapse="yes" /></component>
@@ -53,18 +53,18 @@ my $dataset_stage = '<?xml version="1.0"?>
 		<component type="Field::Multi">
 		    <title>Time period</title>
 		    <help>Help text here</help>
-		    <field ref="date_coll" required="yes" />
-		    <field ref="date_range" required="yes" />
+		    <field ref="collection_date" required="yes" />
+		    <field ref="temporal_cover" required="yes" />
 		</component>
-		<component collapse="yes"><field ref="geog"/></component>
+		<component collapse="yes"><field ref="geographic_cover"/></component>
 		<component type="Field::Multi" show_help="always" collapse="yes">
 		    <title>Geographic location</title>
 		    <help>Enter if applicable the Longitude and Latitude values of a theoretical geographic bounding rectangle that would cover the region in which your data were collected. You can use</help>
 		    <field ref="bounding_box" />
 		</component>
-		<component collapse="yes"><field ref="coll_samp"/></component>
+		<component collapse="yes"><field ref="collection_method"/></component>
 		<component collapse="yes"><field ref="legal_ethical"/></component>
-		<component collapse="yes"><field ref="lineage"/></component>
+		<component collapse="yes"><field ref="provenance"/></component>
 		<component><field ref="language" required="yes"/></component>
 		<component collapse="yes"><field ref="note"/></component>
 		<component collaspe="yes"><field ref="related_resources"/></component>
@@ -120,6 +120,24 @@ my $dataset_stage = '<?xml version="1.0"?>
 
 	close( FILE );
 
+	my $namedset = EPrints::NamedSet->new( "content",
+		repository => $repo
+	);
+ 
+	$namedset->add_option( "data", $self->{package_name} );
+	$namedset->add_option( "documentation", $self->{package_name} );
+	$namedset->add_option( "readme", $self->{package_name} );
+	$namedset->add_option( "metadata", $self->{package_name} );
+	$namedset->add_option( "full_archive", $self->{package_name} );
+
+	$namedset = EPrints::NamedSet->new( "licenses",
+		repository => $repo
+	);
+ 
+	$namedset->add_option( "odc_by", $self->{package_name} );
+	$namedset->add_option( "odc_odbl", $self->{package_name} );
+	$namedset->add_option( "odc_dbcl", $self->{package_name} );
+
 	$self->reload_config if !$skip_reload;
 }
 
@@ -171,6 +189,24 @@ sub action_disable
 	print FILE $xml->to_string($dom, indent=>1);
 
 	close( FILE );
+
+	my $namedset = EPrints::NamedSet->new( "content",
+		repository => $repo
+	);
+ 
+	$namedset->remove_option( "data", $self->{package_name} );
+	$namedset->remove_option( "documentation", $self->{package_name} );
+	$namedset->remove_option( "readme", $self->{package_name} );
+	$namedset->remove_option( "metadata", $self->{package_name} );
+	$namedset->remove_option( "full_archive", $self->{package_name} );
+
+	$namedset = EPrints::NamedSet->new( "licenses",
+		repository => $repo
+	);
+ 
+	$namedset->remove_option( "odc_by", $self->{package_name} );
+	$namedset->remove_option( "odc_odbl", $self->{package_name} );
+	$namedset->remove_option( "odc_dbcl", $self->{package_name} );
 
 	$self->reload_config if !$skip_reload;
 }
